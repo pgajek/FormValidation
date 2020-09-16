@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="container">
+    <header class="header">
+        <h2>Create Account</h2>
+    </header>
+    <form id='form' class="form">
+        <div class="form-control">
+            <label class='label' for="username">Username:</label>
+            <input class="input" type="text" name='username' id='username' placeholder="Username">
+            <i class='fas fa-check-circle'></i>
+            <i class='fas fa-exclamation-circle'></i>
+            <small class='errorMessage'>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class='label' for="email">E-mail:</label>
+            <input class="input" type="email" name='email' id='email' placeholder="name@google.com">
+            <i class='fas fa-check-circle'></i>
+            <i class='fas fa-exclamation-circle'></i>
+            <small class='errorMessage'>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class='label' for="password">Password</label>
+            <input class="input" type="password" name='password' id='password' placeholder="password">
+            <i class='fas fa-check-circle'></i>
+            <i class='fas fa-exclamation-circle'></i>
+            <small class='errorMessage'>Error message</small>
+        </div>
+        <div class="form-control">
+            <label class='label' for="password">Password Check</label>
+            <input class="input" type="password" name='password2' id='password2' placeholder="password">
+            <i class='fas fa-check-circle'></i>
+            <i class='fas fa-exclamation-circle'></i>
+            <small class='errorMessage'>Error message</small>
+        </div>
+        <button class="formBtn">
+            Submit
+        </button>
+    </form></div>
     <script src="main.js"></script>
 </body>
 </html>
