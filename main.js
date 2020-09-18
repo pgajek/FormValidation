@@ -42,6 +42,19 @@ function checkInputs() {
   } else {
     setSuccessFor(email);
   }
+  if (passwordValue === "") {
+    setErrorFor(password, "Password cannot be blank");
+  } else {
+    setSuccessFor(password);
+  }
+
+  if (password2Value === "") {
+    setErrorFor(password2, "Password2 cannot be blank");
+  } else if (passwordValue !== password2Value) {
+    setErrorFor(password2, "Passwords does not match");
+  } else {
+    setSuccessFor(password2);
+  }
 }
 //trim remover whitespace from both ends
 
